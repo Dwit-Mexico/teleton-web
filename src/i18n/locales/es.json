@@ -139,7 +139,17 @@
     "subtitle": "Todas las fotos de mascotas que has compartido",
     "newPost": "Nueva Publicacion",
     "emptyTitle": "Aun no hay publicaciones",
-    "emptySubtitle": "Dona y comparte tu primera foto de mascota!"
+    "emptySubtitle": "Dona y comparte tu primera foto de mascota!",
+    "editPost": "Editar publicacion",
+    "changeImage": "Cambiar imagen",
+    "saveChanges": "Guardar cambios",
+    "saving": "Guardando..."
+  },
+  "moderationStatus": {
+    "approved": "Aprobada",
+    "pending": "En revision",
+    "underReview": "Bajo revision",
+    "rejected": "Rechazada"
   },
   "myDonations": {
     "title": "Mis Donaciones",

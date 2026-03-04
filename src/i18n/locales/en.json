@@ -139,7 +139,17 @@
     "subtitle": "All the pet photos you've shared",
     "newPost": "New Post",
     "emptyTitle": "No posts yet",
-    "emptySubtitle": "Donate and share your first pet photo!"
+    "emptySubtitle": "Donate and share your first pet photo!",
+    "editPost": "Edit post",
+    "changeImage": "Change image",
+    "saveChanges": "Save changes",
+    "saving": "Saving..."
+  },
+  "moderationStatus": {
+    "approved": "Approved",
+    "pending": "Pending review",
+    "underReview": "Under review",
+    "rejected": "Rejected"
   },
   "myDonations": {
     "title": "My Donations",

@@ -139,7 +139,17 @@
     "subtitle": "Todas as fotos de animais que voce compartilhou",
     "newPost": "Nova Publicacao",
     "emptyTitle": "Nenhuma publicacao ainda",
-    "emptySubtitle": "Doe e compartilhe sua primeira foto de animal!"
+    "emptySubtitle": "Doe e compartilhe sua primeira foto de animal!",
+    "editPost": "Editar publicacao",
+    "changeImage": "Alterar imagem",
+    "saveChanges": "Salvar alteracoes",
+    "saving": "Salvando..."
+  },
+  "moderationStatus": {
+    "approved": "Aprovada",
+    "pending": "Em revisao",
+    "underReview": "Em analise",
+    "rejected": "Rejeitada"
   },
   "myDonations": {
     "title": "Minhas Doacoes",

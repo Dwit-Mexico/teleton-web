@@ -139,7 +139,17 @@
     "subtitle": "Totes les fotos de mascotes que has compartit",
     "newPost": "Nova Publicacio",
     "emptyTitle": "Encara no hi ha publicacions",
-    "emptySubtitle": "Dona i comparteix la teva primera foto de mascota!"
+    "emptySubtitle": "Dona i comparteix la teva primera foto de mascota!",
+    "editPost": "Editar publicacio",
+    "changeImage": "Canviar imatge",
+    "saveChanges": "Desar canvis",
+    "saving": "Desant..."
+  },
+  "moderationStatus": {
+    "approved": "Aprovada",
+    "pending": "En revisio",
+    "underReview": "Sota revisio",
+    "rejected": "Rebutjada"
   },
   "myDonations": {
     "title": "Les Meves Donacions",
