@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { PAYMENT_API_URL, POST_API_URL } from "@/constants";
 import { useAuth } from "@/contexts/AuthContext";
 import type { APIResponse, Donation, Post } from "@/types";
@@ -8,6 +8,7 @@ import type { APIResponse, Donation, Post } from "@/types";
 export default function UploadPage() {
   const { isAuthenticated, accessToken } = useAuth();
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const { t } = useTranslation();
   const [donation, setDonation] = useState<Donation | null>(null);
   const [isLoadingDonation, setIsLoadingDonation] = useState(true);
@@ -18,18 +19,23 @@ export default function UploadPage() {
   const [error, setError] = useState<string | null>(null);
   const [uploadSuccess, setUploadSuccess] = useState(false);
 
-  const fetchUnusedDonation = useCallback(async () => {
-    if (!accessToken) {
+  const sessionId = searchParams.get("session_id");
+
+  const fetchDonation = useCallback(async () => {
+    if (!accessToken || !sessionId) {
       setIsLoadingDonation(false);
       return;
     }
 
     try {
-      const response = await fetch(`${PAYMENT_API_URL}/donations/unused`, {
-        headers: {
-          Authorization: `Bearer ${accessToken}`,
-        },
-      });
+      const response = await fetch(
+        `${PAYMENT_API_URL}/donations/session/${sessionId}`,
+        {
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+          },
+        }
+      );
 
       const data: APIResponse<Donation> = await response.json();
 
@@ -41,15 +47,15 @@ export default function UploadPage() {
     } finally {
       setIsLoadingDonation(false);
     }
-  }, [accessToken]);
+  }, [accessToken, sessionId]);
 
   useEffect(() => {
     if (!isAuthenticated) {
       navigate("/");
       return;
     }
-    fetchUnusedDonation();
-  }, [isAuthenticated, navigate, fetchUnusedDonation]);
+    fetchDonation();
+  }, [isAuthenticated, navigate, fetchDonation]);
 
   const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -187,20 +193,23 @@ export default function UploadPage() {
 
           <div className="space-y-4">
             <Link
-              to="/donate"
+              to="/my-donations"
               className="block w-full py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 transition-all"
+            >
+              <span className="flex items-center justify-center gap-2">
+                <span className="material-symbols-outlined">volunteer_activism</span>
+                {t("myDonations.title")}
+              </span>
+            </Link>
+
+            <Link
+              to="/donate"
+              className="block w-full py-4 bg-gray-100 text-gray-700 font-semibold rounded-xl hover:bg-gray-200 transition-all"
             >
               <span className="flex items-center justify-center gap-2">
                 <span className="material-symbols-outlined">favorite</span>
                 {t("common.makeDonation")}
               </span>
-            </Link>
-
-            <Link
-              to="/"
-              className="block w-full py-4 bg-gray-100 text-gray-700 font-semibold rounded-xl hover:bg-gray-200 transition-all"
-            >
-              {t("common.returnToGallery")}
             </Link>
           </div>
         </div>

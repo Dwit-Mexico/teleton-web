@@ -146,7 +146,8 @@
     "subtitle": "Seu historico de contribuicoes",
     "emptyTitle": "Nenhuma doacao ainda",
     "emptySubtitle": "Faca sua primeira doacao e apoie os abrigos locais!",
-    "photoUploaded": "Foto enviada"
+    "photoUploaded": "Foto enviada",
+    "uploadPhoto": "Enviar Foto"
   },
   "photoWall": {
     "posts": "publicacoes",

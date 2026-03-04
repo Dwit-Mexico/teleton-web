@@ -146,7 +146,8 @@
     "subtitle": "Your contribution history",
     "emptyTitle": "No donations yet",
     "emptySubtitle": "Make your first donation and support local shelters!",
-    "photoUploaded": "Photo uploaded"
+    "photoUploaded": "Photo uploaded",
+    "uploadPhoto": "Upload Photo"
   },
   "photoWall": {
     "posts": "posts",

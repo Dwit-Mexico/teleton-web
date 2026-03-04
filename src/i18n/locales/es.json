@@ -146,7 +146,8 @@
     "subtitle": "Tu historial de contribuciones",
     "emptyTitle": "Aun no hay donaciones",
     "emptySubtitle": "Haz tu primera donacion y apoya a los refugios locales!",
-    "photoUploaded": "Foto subida"
+    "photoUploaded": "Foto subida",
+    "uploadPhoto": "Subir Foto"
   },
   "photoWall": {
     "posts": "publicaciones",

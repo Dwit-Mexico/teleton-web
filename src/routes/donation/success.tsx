@@ -15,18 +15,21 @@ export default function DonationSuccessPage() {
   const sessionId = searchParams.get("session_id");
 
   useEffect(() => {
-    const fetchUnusedDonation = async () => {
-      if (!accessToken) {
+    const fetchDonation = async () => {
+      if (!accessToken || !sessionId) {
         setIsLoading(false);
         return;
       }
 
       try {
-        const response = await fetch(`${PAYMENT_API_URL}/donations/unused`, {
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-          },
-        });
+        const response = await fetch(
+          `${PAYMENT_API_URL}/donations/session/${sessionId}`,
+          {
+            headers: {
+              Authorization: `Bearer ${accessToken}`,
+            },
+          }
+        );
 
         const data: APIResponse<Donation> = await response.json();
 
@@ -40,8 +43,8 @@ export default function DonationSuccessPage() {
       }
     };
 
-    // Wait a bit for the webhook to process
-    const timer = setTimeout(fetchUnusedDonation, 2000);
+    // Allow time for the Stripe webhook to be processed before querying
+    const timer = setTimeout(fetchDonation, 2000);
     return () => clearTimeout(timer);
   }, [accessToken, sessionId]);
 
@@ -92,7 +95,7 @@ export default function DonationSuccessPage() {
 
         <div className="space-y-4">
           <Link
-            to="/upload"
+            to={sessionId ? `/upload?session_id=${sessionId}` : "/upload"}
             className="block w-full py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 transition-all"
           >
             <span className="flex items-center justify-center gap-2">

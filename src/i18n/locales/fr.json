@@ -146,7 +146,8 @@
     "subtitle": "Votre historique de contributions",
     "emptyTitle": "Pas encore de dons",
     "emptySubtitle": "Faites votre premier don et soutenez les refuges locaux !",
-    "photoUploaded": "Photo publiee"
+    "photoUploaded": "Photo publiee",
+    "uploadPhoto": "Publier la Photo"
   },
   "photoWall": {
     "posts": "publications",

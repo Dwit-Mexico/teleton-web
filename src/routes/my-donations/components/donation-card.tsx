@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import type { Donation } from "@/types";
 
 const statusStyles: Record<string, string> = {
@@ -25,6 +26,9 @@ function formatDate(dateStr: string) {
 
 export default function DonationCard({ donation }: { donation: Donation }) {
   const { t } = useTranslation();
+
+  const canUpload =
+    donation.status === "completed" && !donation.imageUploaded;
 
   return (
     <div className="bg-white dark:bg-[#2d241d] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
@@ -54,6 +58,20 @@ export default function DonationCard({ donation }: { donation: Donation }) {
           </span>
         </div>
       </div>
+
+      {canUpload && (
+        <div className="mt-4 pt-4 border-t border-[#f0e6d9] dark:border-[#3d3028]">
+          <Link
+            to={`/upload?session_id=${donation.stripeSessionID}`}
+            className="flex items-center justify-center gap-2 w-full py-2.5 bg-primary hover:bg-[#d97b1f] text-white text-sm font-semibold rounded-xl transition-all active:scale-95"
+          >
+            <span className="material-symbols-outlined text-base">
+              cloud_upload
+            </span>
+            {t("myDonations.uploadPhoto")}
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

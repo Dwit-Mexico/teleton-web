@@ -1,7 +1,6 @@
-export const AUTH_API_URL = "https://pixel-dog.guz-studio.dev/api/auth-service"; // "http://localhost:8082";
-export const PAYMENT_API_URL =
-  "https://pixel-dog.guz-studio.dev/api/payment-service"; // "http://localhost:8081";
-export const POST_API_URL = "https://pixel-dog.guz-studio.dev/api/post-service"; // "http://localhost:8080";
+export const AUTH_API_URL = "http://localhost:8082"; // "https://pixel-dog.guz-studio.dev/api/auth-service";
+export const PAYMENT_API_URL = "http://localhost:8081"; // "https://pixel-dog.guz-studio.dev/api/payment-service";
+export const POST_API_URL = "http://localhost:8080"; // "https://pixel-dog.guz-studio.dev/api/post-service";
 export const IMAGE_URL = "https://izeus20.blob.core.windows.net/pixel-dog";
 const IMAGE_BASE = import.meta.env.DEV ? "/blob/pixel-dog" : IMAGE_URL;
 
