@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pixel-dog-web
+  name: teleton-web
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: pixel-dog-web
+      app: teleton-web
   template:
     metadata:
       labels:
-        app: pixel-dog-web
+        app: teleton-web
     spec:
       containers:
-        - name: pixel-dog-web
-          image: ghcr.io/romanshkvolkov/pixel-dog-web:latest
+        - name: teleton-web
+          image: ghcr.io/romanshkvolkov/teleton-web:latest
           ports:
             - containerPort: 3000

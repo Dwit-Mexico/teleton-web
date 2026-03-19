@@ -17,14 +17,17 @@ jobs:
       contents: read
       packages: write
     env:
-      ENVIRONMENT: prod
       REGISTRY: "ghcr.io"
-      IMAGE: "${{ github.repository_owner }}/${{ github.event.repository.name}}"
+      IMAGE: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
+
+      - name: Set short SHA
+        id: vars
+        run: echo "sha=${GITHUB_SHA::7}" >> "$GITHUB_OUTPUT"
 
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v3
@@ -33,14 +36,43 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build image
+      - name: Build and push image
         run: |
-          SHORT_SHA="latest"
-          IMAGE_REPO="${{ env.REGISTRY }}/$(echo "${{ env.IMAGE }}" | tr '[:upper:]' '[:lower:]'):${SHORT_SHA}"
-          docker build -t "${IMAGE_REPO}" .
+          IMAGE_REPO="${{ env.REGISTRY }}/$(echo "${{ env.IMAGE }}" | tr '[:upper:]' '[:lower:]')"
+          docker build \
+            -t "${IMAGE_REPO}:${{ steps.vars.outputs.sha }}" \
+            -t "${IMAGE_REPO}:latest" \
+            .
+          docker push "${IMAGE_REPO}:${{ steps.vars.outputs.sha }}"
+          docker push "${IMAGE_REPO}:latest"
 
-      - name: Push image
-        run: |
-          SHORT_SHA="latest"
-          IMAGE_REPO="${{ env.REGISTRY }}/$(echo "${{ env.IMAGE }}" | tr '[:upper:]' '[:lower:]'):${SHORT_SHA}"
-          docker push "$IMAGE_REPO"
+      - name: Copy k8s manifests to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          source: "k8s/"
+          target: "/tmp/teleton-k8s"
+
+      - name: Apply or rollout on server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            IMAGE_REPO="${{ env.REGISTRY }}/$(echo "${{ env.IMAGE }}" | tr '[:upper:]' '[:lower:]')"
+            SHA="${{ steps.vars.outputs.sha }}"
+
+            if kubectl get deployment teleton-web &>/dev/null; then
+              echo "Deployment exists — updating image"
+              kubectl set image deployment/teleton-web teleton-web="${IMAGE_REPO}:${SHA}"
+            else
+              echo "First deploy — applying manifests"
+              kubectl apply -f /tmp/teleton-k8s/k8s/
+            fi
+
+            kubectl rollout status deployment/teleton-web --timeout=120s

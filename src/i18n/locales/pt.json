@@ -1,8 +1,8 @@
 {
   "common": {
-    "pixelDog": "Pixel Dog",
+    "pixelDog": "Teletón",
     "donate": "Doar",
-    "donateAndUpload": "Doar e Enviar",
+    "donateAndUpload": "Doar e Compartilhar",
     "signIn": "Entrar",
     "returnToGallery": "Voltar a galeria",
     "makeDonation": "Fazer uma doacao",
@@ -11,18 +11,18 @@
   },
   "nav": {
     "gallery": "Galeria",
-    "photoWall": "Mural de Fotos",
+    "photoWall": "Muro da Esperanca",
     "impact": "Impacto",
     "transparency": "Transparencia",
-    "searchPlaceholder": "Buscar animal..."
+    "searchPlaceholder": "Buscar mensagem..."
   },
   "footer": {
-    "description": "Conectando amantes de animais atraves de micro-doacoes para apoiar abrigos em todo o mundo. Cada pixel conta.",
+    "description": "Unindo coracoes atraves de micro-doacoes para apoiar criancas e jovens com deficiencia, cancer ou autismo nos centros de reabilitacao CRIT. Cada doacao transforma uma vida.",
     "organization": "Organizacao",
     "ourMission": "Nossa Missao",
     "howItWorks": "Como Funciona",
     "transparencyReport": "Relatorio de Transparencia",
-    "partnerShelters": "Abrigos Parceiros",
+    "partnerShelters": "Centros CRIT",
     "community": "Comunidade",
     "successStories": "Historias de Sucesso",
     "donorFaq": "Perguntas Frequentes",
@@ -31,11 +31,11 @@
     "newsletter": "Newsletter",
     "emailPlaceholder": "Endereco de e-mail",
     "join": "Participar",
-    "copyright": "\u00a9 {{year}} Pixel Dog. Uma plataforma de micro-filantropia para todas as criaturas."
+    "copyright": "\u00a9 {{year}} Teletón. Uma plataforma de micro-filantropia para a reabilitacao e inclusao de criancas e jovens."
   },
   "auth": {
-    "welcomeTitle": "Bem-vindo ao Pixel Dog",
-    "welcomeSubtitle": "Entre para enviar fotos e acompanhar suas doacoes para ajudar animais de abrigos",
+    "welcomeTitle": "Bem-vindo ao Teletón",
+    "welcomeSubtitle": "Entre para compartilhar sua mensagem de apoio e acompanhar suas doacoes que ajudam criancas com deficiencia, cancer ou autismo",
     "agreementText": "Ao entrar, voce concorda com nossos",
     "and": "e",
     "continueWithGoogle": "Continuar com Google",
@@ -57,42 +57,42 @@
   },
   "userMenu": {
     "myProfile": "Meu Perfil",
-    "myPosts": "Minhas Publicacoes",
+    "myPosts": "Minhas Mensagens",
     "myDonations": "Minhas Doacoes",
     "signOut": "Sair"
   },
   "home": {
-    "heroTitle": "Pequenos Atos, Grandes Alegrias",
-    "heroSubtitle": "Cada foto de animal compartilhada impulsiona nossa missao de micro-filantropia para apoiar abrigos e grupos de resgate locais.",
+    "heroTitle": "Sua Solidariedade Faz Milagres",
+    "heroSubtitle": "Cada foto compartilhada impulsiona nossa missao de micro-filantropia para construir e operar centros de reabilitacao CRIT para criancas e jovens com deficiencia.",
     "errorTitle": "Algo deu errado",
-    "emptyTitle": "Nenhuma publicacao ainda",
-    "emptySubtitle": "Seja o primeiro a compartilhar algo incrivel!"
+    "emptyTitle": "Nenhuma mensagem ainda",
+    "emptySubtitle": "Seja o primeiro a compartilhar seu apoio!"
   },
   "gallery": {
-    "shareYourPixelDog": "Compartilhe seu Pixel Dog",
+    "shareYourPixelDog": "Compartilhe sua mensagem de esperanca",
     "uploadAndDonate": "Envie uma foto e doe a partir de $1.00",
-    "signInToUpload": "Entre para enviar uma foto",
+    "signInToUpload": "Entre para compartilhar uma foto",
     "donated": "${{amount}} Doado"
   },
   "upload": {
-    "title": "Envie a Foto do seu Animal",
-    "subtitle": "Compartilhe seu amigo peludo com a comunidade Pixel Dog",
+    "title": "Compartilhe sua Foto de Apoio",
+    "subtitle": "Una sua voz de solidariedade a comunidade Teletón",
     "donationActive": "Doacao Ativa",
-    "petPhoto": "Foto do Animal",
+    "petPhoto": "Sua Foto",
     "clickToSelect": "Clique para selecionar uma foto",
     "fileTypes": "PNG, JPG, WEBP ate 10MB",
-    "descriptionLabel": "Descricao (Opcional)",
-    "descriptionPlaceholder": "Conte-nos sobre seu animal...",
+    "descriptionLabel": "Mensagem (Opcional)",
+    "descriptionPlaceholder": "Compartilhe uma mensagem de esperanca ou solidariedade...",
     "uploading": "Enviando...",
     "uploadPhoto": "Enviar Foto",
     "agreement": "Ao enviar, voce confirma que tem os direitos de compartilhar esta foto e concorda com nossos termos de servico.",
-    "successTitle": "Foto Enviada!",
-    "successSubtitle": "A foto do seu animal foi adicionada a galeria do Pixel Dog.",
+    "successTitle": "Foto Compartilhada!",
+    "successSubtitle": "Sua mensagem de apoio foi adicionada ao Muro da Esperanca do Teletón.",
     "viewGallery": "Ver Galeria",
     "uploadAnother": "Enviar Outra Foto",
     "checkingDonation": "Verificando status da doacao...",
     "donationRequired": "Doacao Necessaria",
-    "donationRequiredDesc": "Para enviar uma foto, voce precisa fazer uma doacao primeiro. Cada doacao permite enviar uma foto para a galeria.",
+    "donationRequiredDesc": "Para enviar uma foto, voce precisa fazer uma doacao primeiro. Cada doacao permite compartilhar uma foto no Muro da Esperanca.",
     "errorInvalidFile": "Por favor, selecione um arquivo de imagem",
     "errorFileSize": "A imagem deve ter menos de 10MB",
     "errorUploadFailed": "Falha ao enviar a imagem",
@@ -100,7 +100,7 @@
   },
   "donation": {
     "title": "Fazer uma Doacao",
-    "subtitle": "Apoie o Pixel Dog e envie a foto do seu animal para nossa galeria",
+    "subtitle": "Apoie o Teletón e compartilhe sua foto no Muro da Esperanca",
     "selectAmount": "Selecionar Valor",
     "customAmount": "Valor Personalizado",
     "enterAmount": "Digite o valor",
@@ -112,20 +112,20 @@
     "securePoweredByStripe": "Pagamento seguro por Stripe",
     "whatHappensNext": "O que acontece depois?",
     "step1": "1. Complete sua doacao via Stripe",
-    "step2": "2. Envie a foto do seu animal para a galeria",
+    "step2": "2. Envie sua foto para o Muro da Esperanca",
     "step3": "3. Sua foto sera exibida com seu selo de doador",
     "errorCreateSession": "Falha ao criar sessao de doacao",
     "errorConnection": "Falha ao conectar com o servico de pagamento"
   },
   "donationSuccess": {
     "title": "Obrigado pela sua Doacao!",
-    "subtitle": "Seu apoio nos ajuda a manter o Pixel Dog e celebrar nossos amigos peludos.",
+    "subtitle": "Seu apoio ajuda a construir e operar centros CRIT que transformam a vida de criancas e jovens com deficiencia.",
     "donationAmount": "Valor da Doacao",
     "statusCompleted": "Concluido",
     "statusLabel": "Status:",
     "processingMessage": "Sua doacao esta sendo processada. Isso pode levar alguns instantes.",
-    "uploadPhoto": "Envie a Foto do seu Animal",
-    "uploadLater": "Voce pode enviar sua foto agora ou mais tarde pela galeria. Cada doacao permite enviar uma foto."
+    "uploadPhoto": "Envie sua Foto de Apoio",
+    "uploadLater": "Voce pode enviar sua foto agora ou mais tarde pela galeria. Cada doacao permite compartilhar uma foto no Muro da Esperanca."
   },
   "donationCancel": {
     "title": "Doacao Cancelada",
@@ -135,12 +135,12 @@
     "helpMessage": "Se voce teve algum problema durante o pagamento, por favor entre em contato com nossa equipe de suporte."
   },
   "myPosts": {
-    "title": "Minhas Publicacoes",
-    "subtitle": "Todas as fotos de animais que voce compartilhou",
-    "newPost": "Nova Publicacao",
-    "emptyTitle": "Nenhuma publicacao ainda",
-    "emptySubtitle": "Doe e compartilhe sua primeira foto de animal!",
-    "editPost": "Editar publicacao",
+    "title": "Minhas Mensagens",
+    "subtitle": "Todas as fotos de apoio que voce compartilhou",
+    "newPost": "Nova Mensagem",
+    "emptyTitle": "Nenhuma mensagem ainda",
+    "emptySubtitle": "Doe e compartilhe sua primeira mensagem de esperanca!",
+    "editPost": "Editar mensagem",
     "changeImage": "Alterar imagem",
     "saveChanges": "Salvar alteracoes",
     "saving": "Salvando..."
@@ -155,12 +155,12 @@
     "title": "Minhas Doacoes",
     "subtitle": "Seu historico de contribuicoes",
     "emptyTitle": "Nenhuma doacao ainda",
-    "emptySubtitle": "Faca sua primeira doacao e apoie os abrigos locais!",
+    "emptySubtitle": "Faca sua primeira doacao e apoie os centros CRIT do Teletón!",
     "photoUploaded": "Foto enviada",
     "uploadPhoto": "Enviar Foto"
   },
   "photoWall": {
-    "posts": "publicacoes",
+    "posts": "mensagens",
     "jumpPlaceholder": "x, y",
     "jumpGo": "Ir",
     "controlsHint": "Arraste para mover · Role para zoom · Pince no toque"

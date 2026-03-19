@@ -1,7 +1,7 @@
 apiVersion: gateway.networking.k8s.io/v1
 kind: HTTPRoute
 metadata:
-  name: pixel-dog-route
+  name: teleton-route
   namespace: default
 spec:
   parentRefs:
@@ -9,7 +9,7 @@ spec:
       namespace: default
 
   hostnames:
-    - "pixel-dog.guz-studio.dev"
+    - "teleton.dwitsites.com"
 
   rules:
     - matches:
@@ -18,5 +18,5 @@ spec:
             value: /
 
       backendRefs:
-        - name: pixel-dog-web
+        - name: teleton-web
           port: 80

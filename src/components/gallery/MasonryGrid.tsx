@@ -105,7 +105,7 @@ export default function MasonryGrid({
                 <PostCard
                   image={getImageUrl(post.pathname)}
                   alt={post.description || "Post image"}
-                  amountDonated={1.0}
+                  amountDonated={post.amountDonated}
                   className="w-full"
                 />
               </motion.div>

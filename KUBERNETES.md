@@ -20,10 +20,10 @@ can access.
 
 ```bash
 # Build the image
-docker build -t your-registry/pixel-dog-web:latest .
+docker build -t your-registry/teleton-web:latest .
 
 # Push to registry
-docker push your-registry/pixel-dog-web:latest
+docker push your-registry/teleton-web:latest
 ```
 
 ### 2. Update Configuration
@@ -32,8 +32,8 @@ Edit `k8s/deployment.yaml` and update the `image` field:
 
 ```yaml
 containers:
-    - name: pixel-dog-web
-      image: ghcr.io/romanshkvolkov/pixel-dog-web:latest # <--- Update this
+    - name: teleton-web
+      image: ghcr.io/romanshkvolkov/teleton-web:latest # <--- Update this
 ```
 
 Edit `k8s/http-route.yaml` and update the `host` field:
@@ -41,7 +41,7 @@ Edit `k8s/http-route.yaml` and update the `host` field:
 ```yaml
 spec:
     rules:
-        - host: pixel-dog.guz-studio.dev # <--- Update this
+        - host: teleton.guz-studio.dev # <--- Update this
 ```
 
 ### 3. Apply Manifests
@@ -63,7 +63,7 @@ kubectl get pods
 Check logs if needed:
 
 ```bash
-kubectl logs -l app=pixel-dog-web
+kubectl logs -l app=teleton-web
 ```
 
 ## 🔄 Updates

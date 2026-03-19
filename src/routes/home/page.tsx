@@ -72,7 +72,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen w-full bg-background-light dark:bg-background-dark transition-colors duration-300">
-      <main className="max-w-[1440px] mx-auto px-4 py-8 lg:px-10">
+      <main className="max-w-360 mx-auto px-4 py-8 lg:px-10">
         {/* Hero Section */}
         <section className="max-w-2xl mx-auto text-center mb-12 animate-fadeIn">
           <h2 className="text-[#1b140d] dark:text-white text-4xl lg:text-5xl font-extrabold leading-tight mb-4">

@@ -7,12 +7,17 @@ type PostCardProps = {
   className?: string;
 };
 
-export default function PostCard({ image, alt, amountDonated, className = "" }: PostCardProps) {
+export default function PostCard({
+  image,
+  alt,
+  amountDonated,
+  className = "",
+}: PostCardProps) {
   const { t } = useTranslation();
 
   return (
     <article
-      className={`min-w-[300px] md:min-w-[350px] max-w-[400px] snap-center h-full flex flex-col ${className}`}
+      className={`min-w-75 md:min-w-87.5 max-w-100 snap-center h-full flex flex-col ${className}`}
     >
       <div className="relative group rounded-xl overflow-hidden cursor-zoom-in h-full flex-1">
         <img
@@ -25,7 +30,7 @@ export default function PostCard({ image, alt, amountDonated, className = "" }: 
           <div className="flex justify-between items-center text-white">
             <span className="font-bold text-lg">Buddy</span>
             <div className="flex items-center gap-1 bg-primary text-[10px] uppercase tracking-wider font-bold px-2.5 py-1 rounded">
-              {t("gallery.donated", { amount: amountDonated.toFixed(2) })}
+              {t("gallery.donated", { amount: amountDonated?.toFixed(2) })}
             </div>
           </div>
         </div>

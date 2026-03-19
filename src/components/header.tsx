@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { ASSETS } from "@/brand.config";
 import { useAuth } from "../contexts/AuthContext";
 import { AuthModal } from "./auth/AuthModal";
 import { UserMenu } from "./auth/UserMenu";
@@ -37,12 +38,7 @@ export default function Header() {
           <div className="flex items-center gap-8">
             <a href="/" className="flex items-center gap-3">
               <div className="text-primary flex items-center justify-center">
-                <span
-                  className="material-symbols-outlined text-3xl"
-                  style={{ fontVariationSettings: "FILL 1" }}
-                >
-                  pets
-                </span>
+                <img src={ASSETS.logoUrl} alt="Teletón" className="h-8 w-8" />
               </div>
               <h1 className="text-xl font-bold tracking-tight">
                 {t("common.pixelDog")}

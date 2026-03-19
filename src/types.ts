@@ -1,10 +1,15 @@
-export type ModerationStatus = "pending" | "approved" | "under_review" | "rejected";
+export type ModerationStatus =
+  | "pending"
+  | "approved"
+  | "under_review"
+  | "rejected";
 
 export interface Post {
   id: string;
   description: string;
   pathname: string;
   userID: string;
+  amountDonated: number;
   moderationStatus: ModerationStatus;
 }
 

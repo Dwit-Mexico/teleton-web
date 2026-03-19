@@ -1,8 +1,8 @@
 {
   "common": {
-    "pixelDog": "Pixel Dog",
+    "pixelDog": "Teletón",
     "donate": "Donate",
-    "donateAndUpload": "Donate & Upload",
+    "donateAndUpload": "Donate & Share",
     "signIn": "Sign In",
     "returnToGallery": "Return to Gallery",
     "makeDonation": "Make a Donation",
@@ -11,18 +11,18 @@
   },
   "nav": {
     "gallery": "Gallery",
-    "photoWall": "Photo Wall",
+    "photoWall": "Wall of Hope",
     "impact": "Impact",
     "transparency": "Transparency",
-    "searchPlaceholder": "Find a pet..."
+    "searchPlaceholder": "Find a message..."
   },
   "footer": {
-    "description": "Connecting pet lovers through micro-donations to support shelters worldwide. Every pixel counts.",
+    "description": "Uniting hearts through micro-donations to support children and youth with disabilities, cancer, or autism at CRIT rehabilitation centers. Every donation transforms a life.",
     "organization": "Organization",
     "ourMission": "Our Mission",
     "howItWorks": "How it Works",
     "transparencyReport": "Transparency Report",
-    "partnerShelters": "Partner Shelters",
+    "partnerShelters": "CRIT Centers",
     "community": "Community",
     "successStories": "Success Stories",
     "donorFaq": "Donor FAQ",
@@ -31,11 +31,11 @@
     "newsletter": "Newsletter",
     "emailPlaceholder": "Email address",
     "join": "Join",
-    "copyright": "\u00a9 {{year}} Pixel Dog. A micro-philanthropy platform for all creatures great and small."
+    "copyright": "\u00a9 {{year}} Teletón. A micro-philanthropy platform for the rehabilitation and inclusion of children and youth."
   },
   "auth": {
-    "welcomeTitle": "Welcome to Pixel Dog",
-    "welcomeSubtitle": "Sign in to upload photos and track your donations to help shelter pets",
+    "welcomeTitle": "Welcome to Teletón",
+    "welcomeSubtitle": "Sign in to share your message of support and track your donations that help children with disabilities, cancer, or autism",
     "agreementText": "By signing in, you agree to our",
     "and": "and",
     "continueWithGoogle": "Continue with Google",
@@ -57,42 +57,42 @@
   },
   "userMenu": {
     "myProfile": "My Profile",
-    "myPosts": "My Posts",
+    "myPosts": "My Messages",
     "myDonations": "My Donations",
     "signOut": "Sign out"
   },
   "home": {
-    "heroTitle": "Small Acts, Big Wags",
-    "heroSubtitle": "Every pet photo shared fuels our micro-philanthropy mission to support local shelters and rescue groups.",
+    "heroTitle": "Your Solidarity Makes Miracles",
+    "heroSubtitle": "Every shared photo fuels our micro-philanthropy mission to build and operate CRIT rehabilitation centers for children and youth with disabilities.",
     "errorTitle": "Oops! Something went wrong",
-    "emptyTitle": "No posts yet",
-    "emptySubtitle": "Be the first to share something amazing!"
+    "emptyTitle": "No messages yet",
+    "emptySubtitle": "Be the first to share your support!"
   },
   "gallery": {
-    "shareYourPixelDog": "Share your Pixel Dog",
+    "shareYourPixelDog": "Share your message of hope",
     "uploadAndDonate": "Upload a photo and donate as little as $1.00",
-    "signInToUpload": "Sign in to upload a photo",
+    "signInToUpload": "Sign in to share a photo",
     "donated": "${{amount}} Donated"
   },
   "upload": {
-    "title": "Upload Your Pet's Photo",
-    "subtitle": "Share your furry friend with the Pixel Dog community",
+    "title": "Share Your Support Photo",
+    "subtitle": "Add your voice of solidarity to the Teletón community",
     "donationActive": "Donation Active",
-    "petPhoto": "Pet Photo",
+    "petPhoto": "Your Photo",
     "clickToSelect": "Click to select a photo",
     "fileTypes": "PNG, JPG, WEBP up to 10MB",
-    "descriptionLabel": "Description (Optional)",
-    "descriptionPlaceholder": "Tell us about your pet...",
+    "descriptionLabel": "Message (Optional)",
+    "descriptionPlaceholder": "Share a message of hope or solidarity...",
     "uploading": "Uploading...",
     "uploadPhoto": "Upload Photo",
     "agreement": "By uploading, you confirm that you have the rights to share this photo and agree to our terms of service.",
-    "successTitle": "Photo Uploaded!",
-    "successSubtitle": "Your pet's photo has been added to the Pixel Dog gallery.",
+    "successTitle": "Photo Shared!",
+    "successSubtitle": "Your message of support has been added to the Teletón Wall of Hope.",
     "viewGallery": "View Gallery",
     "uploadAnother": "Upload Another Photo",
     "checkingDonation": "Checking donation status...",
     "donationRequired": "Donation Required",
-    "donationRequiredDesc": "To upload a photo, you need to make a donation first. Each donation allows you to upload one photo to the gallery.",
+    "donationRequiredDesc": "To upload a photo, you need to make a donation first. Each donation allows you to share one photo on the Wall of Hope.",
     "errorInvalidFile": "Please select an image file",
     "errorFileSize": "Image must be less than 10MB",
     "errorUploadFailed": "Failed to upload image",
@@ -100,7 +100,7 @@
   },
   "donation": {
     "title": "Make a Donation",
-    "subtitle": "Support Pixel Dog and upload your pet's photo to our gallery",
+    "subtitle": "Support Teletón and share your photo on our Wall of Hope",
     "selectAmount": "Select Amount",
     "customAmount": "Custom Amount",
     "enterAmount": "Enter amount",
@@ -112,20 +112,20 @@
     "securePoweredByStripe": "Secure payment powered by Stripe",
     "whatHappensNext": "What happens next?",
     "step1": "1. Complete your donation via Stripe",
-    "step2": "2. Upload your pet's photo to the gallery",
-    "step3": "3. Your photo will be displayed with your donation badge",
+    "step2": "2. Upload your photo to the Wall of Hope",
+    "step3": "3. Your photo will be displayed with your donor badge",
     "errorCreateSession": "Failed to create donation session",
     "errorConnection": "Failed to connect to payment service"
   },
   "donationSuccess": {
     "title": "Thank You for Your Donation!",
-    "subtitle": "Your support helps us maintain Pixel Dog and celebrate our furry friends.",
+    "subtitle": "Your support helps build and operate CRIT centers that transform the lives of children and youth with disabilities.",
     "donationAmount": "Donation Amount",
     "statusCompleted": "Completed",
     "statusLabel": "Status:",
     "processingMessage": "Your donation is being processed. This may take a few moments.",
-    "uploadPhoto": "Upload Your Pet's Photo",
-    "uploadLater": "You can upload your photo now or later from the gallery. Each donation allows you to upload one photo."
+    "uploadPhoto": "Upload Your Support Photo",
+    "uploadLater": "You can upload your photo now or later from the gallery. Each donation allows you to share one photo on the Wall of Hope."
   },
   "donationCancel": {
     "title": "Donation Cancelled",
@@ -135,12 +135,12 @@
     "helpMessage": "If you experienced any issues during checkout, please contact our support team."
   },
   "myPosts": {
-    "title": "My Posts",
-    "subtitle": "All the pet photos you've shared",
-    "newPost": "New Post",
-    "emptyTitle": "No posts yet",
-    "emptySubtitle": "Donate and share your first pet photo!",
-    "editPost": "Edit post",
+    "title": "My Messages",
+    "subtitle": "All the support photos you've shared",
+    "newPost": "New Message",
+    "emptyTitle": "No messages yet",
+    "emptySubtitle": "Donate and share your first message of hope!",
+    "editPost": "Edit message",
     "changeImage": "Change image",
     "saveChanges": "Save changes",
     "saving": "Saving..."
@@ -155,12 +155,12 @@
     "title": "My Donations",
     "subtitle": "Your contribution history",
     "emptyTitle": "No donations yet",
-    "emptySubtitle": "Make your first donation and support local shelters!",
+    "emptySubtitle": "Make your first donation and support Teletón CRIT centers!",
     "photoUploaded": "Photo uploaded",
     "uploadPhoto": "Upload Photo"
   },
   "photoWall": {
-    "posts": "posts",
+    "posts": "messages",
     "jumpPlaceholder": "x, y",
     "jumpGo": "Go",
     "controlsHint": "Drag to pan · Scroll to zoom · Pinch on touch"

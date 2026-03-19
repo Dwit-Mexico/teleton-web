@@ -1,8 +1,8 @@
 {
   "common": {
-    "pixelDog": "Pixel Dog",
+    "pixelDog": "Teletón",
     "donate": "Donar",
-    "donateAndUpload": "Donar i Pujar",
+    "donateAndUpload": "Donar i Compartir",
     "signIn": "Iniciar sessio",
     "returnToGallery": "Tornar a la galeria",
     "makeDonation": "Fer una donacio",
@@ -11,18 +11,18 @@
   },
   "nav": {
     "gallery": "Galeria",
-    "photoWall": "Mural de Fotos",
+    "photoWall": "Mur d'Esperança",
     "impact": "Impacte",
     "transparency": "Transparència",
-    "searchPlaceholder": "Cercar mascota..."
+    "searchPlaceholder": "Cercar missatge..."
   },
   "footer": {
-    "description": "Connectant amants de les mascotes a traves de micro-donacions per donar suport a refugis d'arreu del mon. Cada pixel compta.",
+    "description": "Unint cors a traves de micro-donacions per donar suport a nens i joves amb discapacitat, cancer o autisme als centres de rehabilitacio CRIT. Cada donacio transforma una vida.",
     "organization": "Organitzacio",
     "ourMission": "La Nostra Missio",
     "howItWorks": "Com Funciona",
     "transparencyReport": "Informe de Transparència",
-    "partnerShelters": "Refugis Associats",
+    "partnerShelters": "Centres CRIT",
     "community": "Comunitat",
     "successStories": "Histories d'Exit",
     "donorFaq": "Preguntes Frequents",
@@ -31,11 +31,11 @@
     "newsletter": "Butlleti",
     "emailPlaceholder": "Correu electronic",
     "join": "Unir-se",
-    "copyright": "\u00a9 {{year}} Pixel Dog. Una plataforma de micro-filantropia per a totes les criatures."
+    "copyright": "\u00a9 {{year}} Teletón. Una plataforma de micro-filantropia per a la rehabilitacio i inclusio de nens i joves."
   },
   "auth": {
-    "welcomeTitle": "Benvingut a Pixel Dog",
-    "welcomeSubtitle": "Inicia sessio per pujar fotos i fer seguiment de les teves donacions per ajudar mascotes de refugis",
+    "welcomeTitle": "Benvingut al Teletón",
+    "welcomeSubtitle": "Inicia sessio per compartir el teu missatge de suport i fer seguiment de les teves donacions que ajuden nens amb discapacitat, cancer o autisme",
     "agreementText": "En iniciar sessio, acceptes els nostres",
     "and": "i",
     "continueWithGoogle": "Continuar amb Google",
@@ -57,42 +57,42 @@
   },
   "userMenu": {
     "myProfile": "El Meu Perfil",
-    "myPosts": "Les Meves Publicacions",
+    "myPosts": "Els Meus Missatges",
     "myDonations": "Les Meves Donacions",
     "signOut": "Tancar sessio"
   },
   "home": {
-    "heroTitle": "Petits Actes, Grans Alegries",
-    "heroSubtitle": "Cada foto de mascota compartida impulsa la nostra missio de micro-filantropia per donar suport a refugis i grups de rescat locals.",
+    "heroTitle": "La Teva Solidaritat Fa Miracles",
+    "heroSubtitle": "Cada foto compartida impulsa la nostra missio de micro-filantropia per construir i operar centres de rehabilitacio CRIT per a nens i joves amb discapacitat.",
     "errorTitle": "Alguna cosa ha anat malament",
-    "emptyTitle": "Encara no hi ha publicacions",
-    "emptySubtitle": "Sigues el primer a compartir alguna cosa increible!"
+    "emptyTitle": "Encara no hi ha missatges",
+    "emptySubtitle": "Sigues el primer a compartir el teu suport!"
   },
   "gallery": {
-    "shareYourPixelDog": "Comparteix el teu Pixel Dog",
+    "shareYourPixelDog": "Comparteix el teu missatge d'esperança",
     "uploadAndDonate": "Puja una foto i dona des de $1.00",
-    "signInToUpload": "Inicia sessio per pujar una foto",
+    "signInToUpload": "Inicia sessio per compartir una foto",
     "donated": "${{amount}} Donat"
   },
   "upload": {
-    "title": "Puja la Foto de la teva Mascota",
-    "subtitle": "Comparteix el teu amic pelut amb la comunitat de Pixel Dog",
+    "title": "Comparteix la Teva Foto de Suport",
+    "subtitle": "Uneix la teva veu de solidaritat a la comunitat Teletón",
     "donationActive": "Donacio Activa",
-    "petPhoto": "Foto de Mascota",
+    "petPhoto": "La Teva Foto",
     "clickToSelect": "Fes clic per seleccionar una foto",
     "fileTypes": "PNG, JPG, WEBP fins a 10MB",
-    "descriptionLabel": "Descripcio (Opcional)",
-    "descriptionPlaceholder": "Explica'ns sobre la teva mascota...",
+    "descriptionLabel": "Missatge (Opcional)",
+    "descriptionPlaceholder": "Comparteix un missatge d'esperança o solidaritat...",
     "uploading": "Pujant...",
     "uploadPhoto": "Pujar Foto",
     "agreement": "En pujar, confirmes que tens els drets per compartir aquesta foto i acceptes els nostres termes de servei.",
-    "successTitle": "Foto Pujada!",
-    "successSubtitle": "La foto de la teva mascota s'ha afegit a la galeria de Pixel Dog.",
+    "successTitle": "Foto Compartida!",
+    "successSubtitle": "El teu missatge de suport s'ha afegit al Mur d'Esperança del Teletón.",
     "viewGallery": "Veure Galeria",
     "uploadAnother": "Pujar Una Altra Foto",
     "checkingDonation": "Verificant estat de la donacio...",
     "donationRequired": "Donacio Requerida",
-    "donationRequiredDesc": "Per pujar una foto, necessites fer una donacio primer. Cada donacio et permet pujar una foto a la galeria.",
+    "donationRequiredDesc": "Per pujar una foto, necessites fer una donacio primer. Cada donacio et permet compartir una foto al Mur d'Esperança.",
     "errorInvalidFile": "Si us plau, selecciona un fitxer d'imatge",
     "errorFileSize": "La imatge ha de ser menor a 10MB",
     "errorUploadFailed": "Error en pujar la imatge",
@@ -100,7 +100,7 @@
   },
   "donation": {
     "title": "Fer una Donacio",
-    "subtitle": "Dona suport a Pixel Dog i puja la foto de la teva mascota a la nostra galeria",
+    "subtitle": "Dona suport al Teletón i comparteix la teva foto al Mur d'Esperança",
     "selectAmount": "Seleccionar Import",
     "customAmount": "Import Personalitzat",
     "enterAmount": "Introdueix l'import",
@@ -112,20 +112,20 @@
     "securePoweredByStripe": "Pagament segur amb Stripe",
     "whatHappensNext": "Que segueix?",
     "step1": "1. Completa la teva donacio a traves de Stripe",
-    "step2": "2. Puja la foto de la teva mascota a la galeria",
-    "step3": "3. La teva foto es mostrara amb la teva insignia de donacio",
+    "step2": "2. Puja la teva foto al Mur d'Esperança",
+    "step3": "3. La teva foto es mostrara amb la teva insignia de donador",
     "errorCreateSession": "Error en crear la sessio de donacio",
     "errorConnection": "Error en connectar amb el servei de pagament"
   },
   "donationSuccess": {
     "title": "Gracies per la teva Donacio!",
-    "subtitle": "El teu suport ens ajuda a mantenir Pixel Dog i celebrar els nostres amics peluts.",
+    "subtitle": "El teu suport ajuda a construir i operar centres CRIT que transformen la vida de nens i joves amb discapacitat.",
     "donationAmount": "Import de Donacio",
     "statusCompleted": "Completat",
     "statusLabel": "Estat:",
     "processingMessage": "La teva donacio s'esta processant. Aixo pot trigar uns moments.",
-    "uploadPhoto": "Puja la Foto de la teva Mascota",
-    "uploadLater": "Pots pujar la teva foto ara o mes tard des de la galeria. Cada donacio et permet pujar una foto."
+    "uploadPhoto": "Puja la Teva Foto de Suport",
+    "uploadLater": "Pots pujar la teva foto ara o mes tard des de la galeria. Cada donacio et permet compartir una foto al Mur d'Esperança."
   },
   "donationCancel": {
     "title": "Donacio Cancel\u00b7lada",
@@ -135,12 +135,12 @@
     "helpMessage": "Si has tingut algun problema durant el pagament, si us plau contacta el nostre equip de suport."
   },
   "myPosts": {
-    "title": "Les Meves Publicacions",
-    "subtitle": "Totes les fotos de mascotes que has compartit",
-    "newPost": "Nova Publicacio",
-    "emptyTitle": "Encara no hi ha publicacions",
-    "emptySubtitle": "Dona i comparteix la teva primera foto de mascota!",
-    "editPost": "Editar publicacio",
+    "title": "Els Meus Missatges",
+    "subtitle": "Totes les fotos de suport que has compartit",
+    "newPost": "Nou Missatge",
+    "emptyTitle": "Encara no hi ha missatges",
+    "emptySubtitle": "Dona i comparteix el teu primer missatge d'esperança!",
+    "editPost": "Editar missatge",
     "changeImage": "Canviar imatge",
     "saveChanges": "Desar canvis",
     "saving": "Desant..."
@@ -155,12 +155,12 @@
     "title": "Les Meves Donacions",
     "subtitle": "El teu historial de contribucions",
     "emptyTitle": "Encara no hi ha donacions",
-    "emptySubtitle": "Fes la teva primera donacio i dona suport als refugis locals!",
+    "emptySubtitle": "Fes la teva primera donacio i dona suport als centres CRIT del Teletón!",
     "photoUploaded": "Foto pujada",
     "uploadPhoto": "Pujar Foto"
   },
   "photoWall": {
-    "posts": "publicacions",
+    "posts": "missatges",
     "jumpPlaceholder": "x, y",
     "jumpGo": "Anar",
     "controlsHint": "Arrossega per moure · Roda per zoom · Pinça en tactil"

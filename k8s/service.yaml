@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: pixel-dog-web
+  name: teleton-web
 spec:
   selector:
-    app: pixel-dog-web
+    app: teleton-web
   ports:
     - port: 80
       targetPort: 3000
