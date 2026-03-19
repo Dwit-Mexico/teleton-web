@@ -1,6 +1,6 @@
 # ☸️ Kubernetes Deployment Guide
 
-This directory contains the manifests to deploy the Pixel Dog Gallery to a
+This directory contains the manifests to deploy the Teleton Gallery to a
 Kubernetes cluster.
 
 ## 📋 Prerequisites

@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Pixel Dog Gallery | Micro-philanthropy for Pets</title>
+    <title>Teleton Gallery | Micro-philanthropy for Pets</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
         rel="stylesheet" />
@@ -76,7 +76,7 @@
                         <span class="material-symbols-outlined text-3xl"
                             style="font-variation-settings: 'FILL' 1">pets</span>
                     </div>
-                    <h1 class="text-xl font-bold tracking-tight">Pixel Dog</h1>
+                    <h1 class="text-xl font-bold tracking-tight">Teleton</h1>
                 </div>
                 <nav class="hidden md:flex items-center gap-6">
                     <a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Gallery</a>
@@ -143,7 +143,7 @@
                         class="size-16 rounded-full bg-primary/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                         <span class="material-symbols-outlined text-3xl text-primary">cloud_upload</span>
                     </div>
-                    <h3 class="text-lg font-bold text-[#1b140d] dark:text-white">Share your Pixel Dog</h3>
+                    <h3 class="text-lg font-bold text-[#1b140d] dark:text-white">Share your Teleton</h3>
                     <p class="text-sm text-[#9a734c] dark:text-[#c0a080] mt-2">Upload a photo and donate as little as
                         $1.00</p>
                 </div>
@@ -352,7 +352,7 @@
                 <div class="flex items-center gap-3">
                     <span class="material-symbols-outlined text-primary text-2xl"
                         style="font-variation-settings: 'FILL' 1">pets</span>
-                    <h2 class="text-xl font-bold">Pixel Dog</h2>
+                    <h2 class="text-xl font-bold">Teleton</h2>
                 </div>
                 <p class="text-sm text-[#9a734c] max-w-xs">Connecting pet lovers through micro-donations to support
                     shelters worldwide. Every pixel counts.</p>
@@ -399,7 +399,7 @@
         </div>
         <div
             class="max-w-[1440px] mx-auto mt-12 pt-8 border-t border-[#e8dfd5] dark:border-[#2d241d] text-center text-xs text-[#9a734c]">
-            © 2024 Pixel Dog. A micro-philanthropy platform for all creatures great and small.
+            © 2024 Teleton. A micro-philanthropy platform for all creatures great and small.
         </div>
     </footer>
 </body>
