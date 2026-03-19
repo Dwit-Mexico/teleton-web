@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: teleton-web
-          image: ghcr.io/romanshkvolkov/teleton-web:latest
+          image: ghcr.io/dwit-mexico/teleton-web:latest
           ports:
             - containerPort: 3000

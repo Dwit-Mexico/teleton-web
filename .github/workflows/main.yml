@@ -69,10 +69,10 @@ jobs:
 
             if kubectl get deployment teleton-web &>/dev/null; then
               echo "Deployment exists — updating image"
-              kubectl set image deployment/teleton-web teleton-web="${IMAGE_REPO}:${SHA}"
             else
               echo "First deploy — applying manifests"
               kubectl apply -f /tmp/teleton-k8s/k8s/
             fi
 
+            kubectl set image deployment/teleton-web teleton-web="${IMAGE_REPO}:${SHA}"
             kubectl rollout status deployment/teleton-web --timeout=120s
