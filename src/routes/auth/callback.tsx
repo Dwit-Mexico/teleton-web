@@ -17,7 +17,7 @@ export default function AuthCallback() {
   }, [navigate]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background-light dark:bg-background-dark">
+    <div className="min-h-[100dvh] flex items-center justify-center bg-background-light dark:bg-background-dark">
       <div className="text-center">
         <div className="relative w-16 h-16 mx-auto mb-6">
           <div className="absolute inset-0 rounded-full border-4 border-primary/20" />

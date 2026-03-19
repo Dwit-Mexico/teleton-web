@@ -53,7 +53,7 @@ export default function DonationSuccessPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background-light py-12 px-4">
+    <div className="min-h-[100dvh] bg-background-light py-12 px-4">
       <div className="max-w-md mx-auto text-center">
         <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
           <span className="material-symbols-outlined text-4xl text-green-600">

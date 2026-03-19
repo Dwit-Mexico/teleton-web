@@ -81,7 +81,7 @@ export default function DonatePage() {
   };
 
   return (
-    <div className="min-h-screen bg-background-light py-12 px-4">
+    <div className="min-h-[100dvh] bg-background-light py-12 px-4">
       <div className="max-w-md mx-auto">
         <div className="text-center mb-8">
           <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">

@@ -253,7 +253,7 @@ export default function MyPostsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background-light dark:bg-background-dark py-12 px-4">
+    <div className="min-h-[100dvh] bg-background-light dark:bg-background-dark py-12 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center justify-between mb-8">
           <div>

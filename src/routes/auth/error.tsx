@@ -8,7 +8,7 @@ export default function AuthError() {
   const errorMessage = t(`auth.errors.${error}`, { defaultValue: t("auth.errors.default") });
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background-light dark:bg-background-dark px-4">
+    <div className="min-h-[100dvh] flex items-center justify-center bg-background-light dark:bg-background-dark px-4">
       <div className="text-center max-w-md">
         <div className="w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
           <svg

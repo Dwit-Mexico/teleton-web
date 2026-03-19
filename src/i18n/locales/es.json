@@ -17,7 +17,7 @@
     "searchPlaceholder": "Buscar mensaje..."
   },
   "footer": {
-    "description": "Uniendo corazones a traves de micro-donaciones para apoyar a ninos y jovenes con discapacidad, cancer o autismo en los centros CRIT. Cada donacion transforma una vida.",
+    "description": "Uniendo corazones a traves de micro-donaciones para apoyar a niños y jovenes con discapacidad, cancer o autismo en los centros CRIT. Cada donacion transforma una vida.",
     "organization": "Organizacion",
     "ourMission": "Nuestra Mision",
     "howItWorks": "Como Funciona",
@@ -31,11 +31,11 @@
     "newsletter": "Boletin",
     "emailPlaceholder": "Correo electronico",
     "join": "Unirse",
-    "copyright": "\u00a9 {{year}} Teletón. Plataforma de micro-filantropia para la rehabilitacion e inclusion de ninos y jovenes."
+    "copyright": "\u00a9 {{year}} Teletón. Plataforma de micro-filantropia para la rehabilitacion e inclusion de niños y jovenes."
   },
   "auth": {
     "welcomeTitle": "Bienvenido al Teletón",
-    "welcomeSubtitle": "Inicia sesion para compartir tu mensaje de apoyo y seguir tus donaciones que ayudan a ninos con discapacidad, cancer o autismo",
+    "welcomeSubtitle": "Inicia sesion para compartir tu mensaje de apoyo y seguir tus donaciones que ayudan a niños con discapacidad, cancer o autismo",
     "agreementText": "Al iniciar sesion, aceptas nuestros",
     "and": "y",
     "continueWithGoogle": "Continuar con Google",
@@ -63,7 +63,7 @@
   },
   "home": {
     "heroTitle": "Tu Solidaridad Hace Milagros",
-    "heroSubtitle": "Cada foto compartida impulsa nuestra mision de micro-filantropia para construir y operar centros de rehabilitacion CRIT para ninos y jovenes con discapacidad.",
+    "heroSubtitle": "Cada foto compartida impulsa nuestra mision de micro-filantropia para construir y operar centros de rehabilitacion CRIT para niños y jovenes con discapacidad.",
     "errorTitle": "Algo salio mal",
     "emptyTitle": "Aun no hay mensajes",
     "emptySubtitle": "Se el primero en compartir tu apoyo!"
@@ -119,7 +119,7 @@
   },
   "donationSuccess": {
     "title": "Gracias por tu Donacion!",
-    "subtitle": "Tu apoyo ayuda a construir y operar centros CRIT que cambian la vida de ninos y jovenes con discapacidad.",
+    "subtitle": "Tu apoyo ayuda a construir y operar centros CRIT que cambian la vida de niños y jovenes con discapacidad.",
     "donationAmount": "Monto de Donacion",
     "statusCompleted": "Completado",
     "statusLabel": "Estado:",

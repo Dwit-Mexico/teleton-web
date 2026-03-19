@@ -54,7 +54,7 @@ export default function PhotoWallPage() {
           <div className="bg-black/60 backdrop-blur-sm rounded-full px-3 py-1.5 flex items-center gap-2">
             <div className="w-24 h-1.5 bg-white/20 rounded-full overflow-hidden">
               <div
-                className="h-full bg-[#c97b2f] rounded-full transition-all"
+                className="h-full bg-primary rounded-full transition-all"
                 style={{ width: `${progressPct}%` }}
               />
             </div>
@@ -79,7 +79,7 @@ export default function PhotoWallPage() {
         />
         <button
           type="submit"
-          className="bg-[#c97b2f] hover:bg-[#d97b1f] text-white text-sm px-4 py-1.5 rounded-full font-bold transition-colors"
+          className="bg-primary hover:bg-primary-light text-white text-sm px-4 py-1.5 rounded-full font-bold transition-colors"
         >
           {t("photoWall.jumpGo")}
         </button>

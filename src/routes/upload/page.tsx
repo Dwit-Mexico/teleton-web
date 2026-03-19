@@ -128,7 +128,7 @@ export default function UploadPage() {
 
   if (uploadSuccess) {
     return (
-      <div className="min-h-screen bg-background-light py-12 px-4">
+      <div className="min-h-[100dvh] bg-background-light py-12 px-4">
         <div className="max-w-md mx-auto text-center">
           <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
             <span className="material-symbols-outlined text-4xl text-green-600">
@@ -165,7 +165,7 @@ export default function UploadPage() {
 
   if (isLoadingDonation) {
     return (
-      <div className="min-h-screen bg-background-light py-12 px-4">
+      <div className="min-h-[100dvh] bg-background-light py-12 px-4">
         <div className="max-w-md mx-auto text-center">
           <div className="animate-spin w-12 h-12 border-4 border-primary border-t-transparent rounded-full mx-auto mb-4"></div>
           <p className="text-gray-600">{t("upload.checkingDonation")}</p>
@@ -176,7 +176,7 @@ export default function UploadPage() {
 
   if (!donation) {
     return (
-      <div className="min-h-screen bg-background-light py-12 px-4">
+      <div className="min-h-[100dvh] bg-background-light py-12 px-4">
         <div className="max-w-md mx-auto text-center">
           <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
             <span className="material-symbols-outlined text-4xl text-orange-600">
@@ -218,7 +218,7 @@ export default function UploadPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background-light py-12 px-4">
+    <div className="min-h-[100dvh] bg-background-light py-12 px-4">
       <div className="max-w-lg mx-auto">
         <div className="text-center mb-8">
           <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
