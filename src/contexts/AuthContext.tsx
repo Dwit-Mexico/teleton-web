@@ -8,11 +8,14 @@ import {
 } from "react";
 import { AUTH_API_URL } from "../constants";
 
+export type UserRole = "donor" | "admin";
+
 interface User {
   id: string;
   email: string;
   name: string;
   picture: string;
+  role: UserRole;
   primaryProvider: "google" | "apple";
 }
 
@@ -20,6 +23,7 @@ interface AuthContextType {
   user: User | null;
   isLoading: boolean;
   isAuthenticated: boolean;
+  isAdmin: boolean;
   accessToken: string | null;
   login: (provider: "google" | "apple") => void;
   logout: () => Promise<void>;
@@ -34,18 +38,29 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [isLoading, setIsLoading] = useState(true);
 
   const refreshAccessToken = useCallback(async (): Promise<string | null> => {
+    const stored = localStorage.getItem("refresh_token");
+    if (!stored) {
+      setAccessToken(null);
+      setUser(null);
+      return null;
+    }
+
     try {
       const response = await fetch(`${AUTH_API_URL}/auth/refresh`, {
         method: "POST",
-        credentials: "include",
+        headers: { Authorization: `Bearer ${stored}` },
       });
 
       if (!response.ok) {
+        localStorage.removeItem("refresh_token");
         throw new Error("Refresh failed");
       }
 
       const data = await response.json();
       if (data.success && data.data) {
+        if (data.data.refreshToken) {
+          localStorage.setItem("refresh_token", data.data.refreshToken);
+        }
         setAccessToken(data.data.accessToken);
         setUser(data.data.user);
         return data.data.accessToken;
@@ -85,7 +100,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (hash.includes("access_token")) {
         const params = new URLSearchParams(hash.substring(1));
         const token = params.get("access_token");
+        const refresh = params.get("refresh_token");
         if (token) {
+          if (refresh) {
+            localStorage.setItem("refresh_token", refresh);
+          }
           setAccessToken(token);
           await fetchCurrentUser(token);
           // Clean up URL
@@ -127,12 +146,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   const logout = async () => {
+    const stored = localStorage.getItem("refresh_token");
     try {
       await fetch(`${AUTH_API_URL}/auth/logout`, {
         method: "POST",
-        credentials: "include",
+        headers: stored ? { Authorization: `Bearer ${stored}` } : undefined,
       });
     } finally {
+      localStorage.removeItem("refresh_token");
       setAccessToken(null);
       setUser(null);
     }
@@ -144,6 +165,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         user,
         isLoading,
         isAuthenticated: !!user,
+        isAdmin: user?.role === "admin",
         accessToken,
         login,
         logout,
