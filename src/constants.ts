@@ -1,12 +1,12 @@
 export const AUTH_API_URL = import.meta.env.DEV
   ? "http://localhost:8082"
-  : "https://api-pixel-solidary.guz-studio.dev/api/auth-service";
+  : "/api/auth-service";
 export const PAYMENT_API_URL = import.meta.env.DEV
   ? "http://localhost:8081"
-  : "https://api-pixel-solidary.guz-studio.dev/api/payment-service";
+  : "/api/payment-service";
 export const POST_API_URL = import.meta.env.DEV
   ? "http://localhost:8080"
-  : "https://api-pixel-solidary.guz-studio.dev/api/post-service";
+  : "/api/post-service";
 export const IMAGE_URL = "https://izeus20.blob.core.windows.net/teleton";
 const IMAGE_BASE = import.meta.env.DEV ? "/blob/teleton" : IMAGE_URL;
 

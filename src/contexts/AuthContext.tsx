@@ -122,8 +122,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [accessToken, refreshAccessToken]);
 
   const login = (provider: "google" | "apple") => {
-    // Redirect to backend OAuth endpoint
-    window.location.href = `${AUTH_API_URL}/auth/${provider}`;
+    const tenant = window.location.hostname;
+    window.location.href = `${AUTH_API_URL}/auth/${provider}?tenant=${encodeURIComponent(tenant)}`;
   };
 
   const logout = async () => {
